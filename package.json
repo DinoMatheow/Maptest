@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:Maptest": "node dist/maptest/server/server.mjs"
+    "serve:ssr:Maptest": "node dist/maptest/server/server.mjs",
+    "set-envs": "node ./scripts/set-envs.js"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +23,7 @@
     "@angular/router": "^18.2.0",
     "@angular/ssr": "^18.2.3",
     "express": "^4.18.2",
+    "mapbox-gl": "^3.12.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
@@ -35,6 +37,7 @@
     "@types/node": "^18.18.0",
     "autoprefixer": "^10.4.21",
     "daisyui": "^5.0.35",
+    "dotenv": "^16.5.0",
     "jasmine-core": "~5.2.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
