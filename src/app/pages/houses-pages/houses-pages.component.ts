@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, signal,  } from '@angular/core';
 import { v4 as uuid } from 'uuid';
+import { MiniMapComponent } from '../../maps/components/mini-map/mini-map.component';
 
 
 interface HouseProperty {
@@ -14,7 +15,7 @@ interface HouseProperty {
 @Component({
   selector: 'app-houses-pages',
   standalone: true,
-  imports: [],
+  imports: [MiniMapComponent],
   templateUrl: './houses-pages.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
