@@ -17,7 +17,7 @@ interface HouseProperty {
   standalone: true,
   imports: [MiniMapComponent],
   templateUrl: './houses-pages.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HousesPagesComponent {
 

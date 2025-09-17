@@ -10,7 +10,7 @@ mapboxgl.accessToken = environment.mapboxkey;
 @Component({
   selector: 'app-fullscream-map-page',
   standalone: true,
-  imports: [DecimalPipe, JsonPipe],
+  imports: [DecimalPipe],
   templateUrl: './fullscream-map-page.component.html',
   styles: [`
     div {
@@ -31,7 +31,7 @@ mapboxgl.accessToken = environment.mapboxkey;
       width: 250px;
     }
   `],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FullscreamMapPageComponent implements AfterViewInit {
   @ViewChild('map', { static: false }) divElement!: ElementRef<HTMLDivElement>;

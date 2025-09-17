@@ -19,7 +19,7 @@ interface Marker{
   standalone: true,
   imports: [],
   templateUrl: './makers-page.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MakersPageComponent implements AfterViewInit {
 

@@ -11,7 +11,7 @@ import { HousesPagesComponent } from '../../../pages/houses-pages/houses-pages.c
   standalone: true,
   imports: [AsyncPipe, RouterLink],
   templateUrl: './navbar.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavbarComponent {
 

@@ -16,7 +16,7 @@ mapboxgl.accessToken = environment.mapboxkey;
     height: 200px;
   }
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MiniMapComponent implements AfterViewInit{
   divElement = viewChild<ElementRef>('map');
