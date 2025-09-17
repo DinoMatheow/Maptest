@@ -41,8 +41,8 @@ export class MakersPageComponent implements AfterViewInit {
     const map = new mapboxgl.Map({
       container: element, // container ID
       style: 'mapbox://styles/mapbox/streets-v12', // style URL
-      center: [-77.07311, -12.02353], // starting position [lng, lat]
-      zoom: 9, // starting zoom
+      center: [-77.61035305329116, -11.108442435634956], // starting position [lng, lat]
+      zoom: 16, // starting zoom
   });
 
 //   const maker = new mapboxgl.Marker({
